@@ -1,0 +1,850 @@
+2021-09-17 14:41:12 WARNING-Not Found: /validate
+2021-09-17 14:43:39 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-17 14:43:39 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:43:54 WARNING-Not Found: /validate
+2021-09-17 14:47:45 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 14:47:45 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:48:42 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-17 14:48:42 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:49:03 WARNING-Not Found: /validate
+2021-09-17 14:50:29 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 14:50:29 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:50:57 WARNING-Not Found: /validate
+2021-09-17 14:52:17 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-17 14:52:17 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:52:18 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:52:41 WARNING-Not Found: /validate
+2021-09-17 14:53:46 INFO-C:\Users\nishakumari\projects\add\calc\urls.py changed, reloading.
+2021-09-17 14:53:46 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:53:49 DEBUG-Using proactor: IocpProactor
+2021-09-17 14:54:13 WARNING-Not Found: /validate
+2021-09-17 15:00:54 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-17 15:00:54 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:01:02 WARNING-Not Found: /validate
+2021-09-17 15:07:52 INFO-C:\Users\nishakumari\projects\add\calc\urls.py changed, reloading.
+2021-09-17 15:07:52 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:08:00 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:08:26 WARNING-Not Found: /validate
+2021-09-17 15:10:02 WARNING-Not Found: /validate
+2021-09-17 15:10:15 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:10:38 WARNING-Not Found: /validate
+2021-09-17 15:16:24 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-17 15:16:24 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:18:01 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:18:22 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 100, in validate_details
+    self.age_and_gender()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 54, in age_and_gender
+    age=calculate_age()
+NameError: name 'calculate_age' is not defined
+2021-09-17 15:21:05 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:21:05 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:21:07 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:21:29 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 100, in validate_details
+    self.age_and_gender()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 54, in age_and_gender
+    age=self.calculate_age()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 37, in calculate_age
+    n=date(d,m,y)
+ValueError: day is out of range for month
+2021-09-17 15:24:29 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:25:08 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 104, in validate_details
+    self.validate_salary()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 67, in validate_salary
+    if int(self.salary)>10000 and int(self.salary<90000):
+ValueError: invalid literal for int() with base 10: '40k'
+2021-09-17 15:26:28 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:26:55 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 104, in validate_details
+    self.validate_salary()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 67, in validate_salary
+    if int(self.salary)>10000 and int(self.salary<90000):
+TypeError: '<' not supported between instances of 'str' and 'int'
+2021-09-17 15:29:27 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:29:27 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:29:28 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:29:54 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 105, in validate_details
+    self.validate_pan()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 72, in validate_pan
+    if len(self.pan==10):
+TypeError: object of type 'bool' has no len()
+2021-09-17 15:30:50 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:30:50 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:31:13 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 106, in validate_details
+    self.validate_result()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 91, in validate_result
+    if reason=="":
+NameError: name 'reason' is not defined
+2021-09-17 15:32:27 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:32:27 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:32:50 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1364, "Field 'request_date' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 37, in storeDetails
+    req.save()
+  File "C:\python 3.9\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\python 3.9\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\python 3.9\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\python 3.9\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\python 3.9\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python 3.9\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\python 3.9\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\python 3.9\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\python 3.9\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\python 3.9\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\python 3.9\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'request_date' doesn't have a default value")
+2021-09-17 15:37:44 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-17 15:37:44 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:37:45 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:37:53 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:38:15 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:40:24 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:47:22 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:47:52 WARNING-Not Found: /favicon.ico
+2021-09-17 15:51:30 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:51:30 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:51:31 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:53:24 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 15:53:24 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:53:27 DEBUG-Using proactor: IocpProactor
+2021-09-17 15:59:45 DEBUG-Using proactor: IocpProactor
+2021-09-17 16:01:19 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-17 16:01:19 DEBUG-Using proactor: IocpProactor
+2021-09-17 16:01:20 WARNING-Not Found: /favicon.ico
+2021-09-17 16:04:08 DEBUG-Using proactor: IocpProactor
+2021-09-17 16:04:13 WARNING-Not Found: /favicon.ico
+2021-09-20 08:51:17 WARNING-Not Found: /favicon.ico
+2021-09-20 10:03:13 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:24:44 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:26:42 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 24, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 123, in validate_details
+    self.validate_pin()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 77, in validate_pin
+    if  re.search(p,self.pincode) and len(self.pincode==6):
+TypeError: object of type 'bool' has no len()
+2021-09-20 10:27:55 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-20 10:27:55 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:31:20 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-20 10:31:20 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:31:26 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:31:33 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:31:53 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:32:10 DEBUG-Using proactor: IocpProactor
+2021-09-20 10:34:24 DEBUG-Using proactor: IocpProactor
+2021-09-20 11:46:36 DEBUG-Using proactor: IocpProactor
+2021-09-20 11:46:42 DEBUG-Using proactor: IocpProactor
+2021-09-20 11:46:52 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 20, in home
+    return render(request,'home.html',{context})
+TypeError: unhashable type: 'dict'
+2021-09-20 11:48:52 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 11:48:52 DEBUG-Using proactor: IocpProactor
+2021-09-20 11:48:58 DEBUG-Using proactor: IocpProactor
+2021-09-20 11:51:28 DEBUG-Using proactor: IocpProactor
+2021-09-20 12:28:18 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-20 12:28:18 DEBUG-Using proactor: IocpProactor
+2021-09-20 12:29:34 INFO-C:\Users\nishakumari\projects\add\calc\models.py changed, reloading.
+2021-09-20 12:29:34 DEBUG-Using proactor: IocpProactor
+2021-09-20 12:29:35 DEBUG-Using proactor: IocpProactor
+2021-09-20 13:09:18 DEBUG-Using proactor: IocpProactor
+2021-09-20 13:16:31 DEBUG-Using proactor: IocpProactor
+2021-09-20 13:16:37 DEBUG-Using proactor: IocpProactor
+2021-09-20 13:17:37 INFO-validating first name of the user
+2021-09-20 13:17:37 INFO-validating last name of the user
+2021-09-20 13:17:37 INFO-validating the nation of the user
+2021-09-20 13:17:37 INFO-validating the state of the user
+2021-09-20 13:17:37 INFO-validating age with respect to the gender
+2021-09-20 13:17:37 INFO-calculating the age of the user
+2021-09-20 13:17:37 INFO-validating salary of the user
+2021-09-20 13:17:37 INFO-validating pincode of the user
+2021-09-20 13:17:37 INFO-validating pan of the user
+2021-09-20 13:17:37 INFO-validating the nation of the user
+2021-09-20 13:17:37 INFO-validating the state of the user
+2021-09-20 13:17:37 INFO-validating age with respect to the gender
+2021-09-20 13:17:37 INFO-calculating the age of the user
+2021-09-20 13:17:37 INFO-validating pincode of the user
+2021-09-20 13:17:37 INFO-validating salary of the user
+2021-09-20 13:17:37 INFO-validating pan of the user
+2021-09-20 13:17:53 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:15:51 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:15:58 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:17:03 INFO-validating first name of the user
+2021-09-20 14:17:03 INFO-validating last name of the user
+2021-09-20 14:17:03 INFO-validating the nation of the user
+2021-09-20 14:17:03 INFO-validating the state of the user
+2021-09-20 14:17:03 INFO-validating age with respect to the gender
+2021-09-20 14:17:03 INFO-calculating the age of the user
+2021-09-20 14:17:03 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 31, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 130, in validate_details
+    self.age_and_gender()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 73, in age_and_gender
+    age=self.calculate_age()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 52, in calculate_age
+    d,m,y=map(int, self.dob.split('/'))
+ValueError: invalid literal for int() with base 10: 'dnjfjdj'
+2021-09-20 14:17:42 INFO-validating first name of the user
+2021-09-20 14:17:42 INFO-validating last name of the user
+2021-09-20 14:17:42 INFO-validating the nation of the user
+2021-09-20 14:17:42 INFO-validating the state of the user
+2021-09-20 14:17:42 INFO-validating age with respect to the gender
+2021-09-20 14:17:42 INFO-calculating the age of the user
+2021-09-20 14:17:42 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 31, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 130, in validate_details
+    self.age_and_gender()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 73, in age_and_gender
+    age=self.calculate_age()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 52, in calculate_age
+    d,m,y=map(int, self.dob.split('/'))
+ValueError: invalid literal for int() with base 10: 'dnjfjdj'
+2021-09-20 14:19:54 INFO-validating first name of the user
+2021-09-20 14:19:54 INFO-validating last name of the user
+2021-09-20 14:19:54 INFO-validating the nation of the user
+2021-09-20 14:19:54 INFO-validating the state of the user
+2021-09-20 14:19:54 INFO-validating age with respect to the gender
+2021-09-20 14:19:54 INFO-calculating the age of the user
+2021-09-20 14:19:54 INFO-validating salary of the user
+2021-09-20 14:19:54 INFO-validating pincode of the user
+2021-09-20 14:19:54 INFO-validating pan of the user
+2021-09-20 14:19:54 INFO-validating the nation of the user
+2021-09-20 14:19:54 INFO-validating the state of the user
+2021-09-20 14:19:54 INFO-validating age with respect to the gender
+2021-09-20 14:19:54 INFO-calculating the age of the user
+2021-09-20 14:19:54 INFO-validating pincode of the user
+2021-09-20 14:19:54 INFO-validating salary of the user
+2021-09-20 14:19:54 INFO-validating pan of the user
+2021-09-20 14:20:21 INFO-validating first name of the user
+2021-09-20 14:20:21 INFO-validating last name of the user
+2021-09-20 14:20:21 INFO-validating the nation of the user
+2021-09-20 14:20:21 INFO-validating the state of the user
+2021-09-20 14:20:21 INFO-validating age with respect to the gender
+2021-09-20 14:20:21 INFO-calculating the age of the user
+2021-09-20 14:20:21 INFO-validating salary of the user
+2021-09-20 14:20:21 INFO-validating pincode of the user
+2021-09-20 14:20:21 INFO-validating pan of the user
+2021-09-20 14:20:21 INFO-validating the nation of the user
+2021-09-20 14:20:21 INFO-validating the state of the user
+2021-09-20 14:20:21 INFO-validating age with respect to the gender
+2021-09-20 14:20:21 INFO-calculating the age of the user
+2021-09-20 14:20:21 INFO-validating pincode of the user
+2021-09-20 14:20:21 INFO-validating salary of the user
+2021-09-20 14:20:21 INFO-validating pan of the user
+2021-09-20 14:21:03 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:46:49 INFO-validating first name of the user
+2021-09-20 14:46:49 INFO-validating last name of the user
+2021-09-20 14:46:49 INFO-validating the nation of the user
+2021-09-20 14:46:49 INFO-validating the state of the user
+2021-09-20 14:46:49 INFO-validating age with respect to the gender
+2021-09-20 14:46:49 INFO-calculating the age of the user
+2021-09-20 14:46:49 INFO-validating salary of the user
+2021-09-20 14:46:49 INFO-validating pincode of the user
+2021-09-20 14:46:49 INFO-validating pan of the user
+2021-09-20 14:46:49 INFO-validating the nation of the user
+2021-09-20 14:46:49 INFO-validating the state of the user
+2021-09-20 14:46:49 INFO-validating age with respect to the gender
+2021-09-20 14:46:49 INFO-calculating the age of the user
+2021-09-20 14:46:49 INFO-validating pincode of the user
+2021-09-20 14:46:49 INFO-validating salary of the user
+2021-09-20 14:46:49 INFO-validating pan of the user
+2021-09-20 14:47:17 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:48:07 INFO-validating first name of the user
+2021-09-20 14:48:07 INFO-validating last name of the user
+2021-09-20 14:48:07 INFO-validating the nation of the user
+2021-09-20 14:48:07 INFO-validating the state of the user
+2021-09-20 14:48:07 INFO-validating age with respect to the gender
+2021-09-20 14:48:07 INFO-calculating the age of the user
+2021-09-20 14:48:07 INFO-validating salary of the user
+2021-09-20 14:48:07 INFO-validating pincode of the user
+2021-09-20 14:48:07 INFO-validating pan of the user
+2021-09-20 14:48:07 INFO-validating the nation of the user
+2021-09-20 14:48:07 INFO-validating the state of the user
+2021-09-20 14:48:07 INFO-validating age with respect to the gender
+2021-09-20 14:48:07 INFO-calculating the age of the user
+2021-09-20 14:48:07 INFO-validating pincode of the user
+2021-09-20 14:48:07 INFO-validating salary of the user
+2021-09-20 14:48:07 INFO-validating pan of the user
+2021-09-20 14:48:49 INFO-validating first name of the user
+2021-09-20 14:48:49 INFO-validating last name of the user
+2021-09-20 14:48:49 INFO-validating the nation of the user
+2021-09-20 14:48:49 INFO-validating the state of the user
+2021-09-20 14:48:49 INFO-validating age with respect to the gender
+2021-09-20 14:48:49 INFO-calculating the age of the user
+2021-09-20 14:48:49 INFO-validating salary of the user
+2021-09-20 14:48:49 INFO-validating pincode of the user
+2021-09-20 14:48:49 INFO-validating pan of the user
+2021-09-20 14:48:49 INFO-validating the nation of the user
+2021-09-20 14:48:49 INFO-validating the state of the user
+2021-09-20 14:48:49 INFO-validating age with respect to the gender
+2021-09-20 14:48:49 INFO-calculating the age of the user
+2021-09-20 14:48:49 INFO-validating pincode of the user
+2021-09-20 14:48:49 INFO-validating salary of the user
+2021-09-20 14:48:49 INFO-validating pan of the user
+2021-09-20 14:49:49 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:57:58 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 14:57:58 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:58:02 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:58:50 INFO-validating first name of the user
+2021-09-20 14:58:50 INFO-validating last name of the user
+2021-09-20 14:58:50 INFO-validating the nation of the user
+2021-09-20 14:58:50 INFO-validating the state of the user
+2021-09-20 14:58:50 INFO-validating age with respect to the gender
+2021-09-20 14:58:50 INFO-calculating the age of the user
+2021-09-20 14:58:51 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 31, in storeDetails
+    user.validate_details()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 130, in validate_details
+    self.age_and_gender()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 73, in age_and_gender
+    age=self.calculate_age()
+  File "C:\Users\nishakumari\projects\add\calc\validate.py", line 52, in calculate_age
+    d,m,y=map(int, self.dob.split(""))
+ValueError: empty separator
+2021-09-20 14:59:29 INFO-C:\Users\nishakumari\projects\add\calc\validate.py changed, reloading.
+2021-09-20 14:59:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 14:59:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:00:18 INFO-validating first name of the user
+2021-09-20 15:00:18 INFO-validating last name of the user
+2021-09-20 15:00:18 INFO-validating the nation of the user
+2021-09-20 15:00:18 INFO-validating the state of the user
+2021-09-20 15:00:18 INFO-validating age with respect to the gender
+2021-09-20 15:00:18 INFO-calculating the age of the user
+2021-09-20 15:00:18 INFO-validating salary of the user
+2021-09-20 15:00:18 INFO-validating pincode of the user
+2021-09-20 15:00:18 INFO-validating pan of the user
+2021-09-20 15:00:18 INFO-validating the nation of the user
+2021-09-20 15:00:18 INFO-validating the state of the user
+2021-09-20 15:00:18 INFO-validating age with respect to the gender
+2021-09-20 15:00:18 INFO-calculating the age of the user
+2021-09-20 15:00:18 INFO-validating pincode of the user
+2021-09-20 15:00:18 INFO-validating salary of the user
+2021-09-20 15:00:18 INFO-validating pan of the user
+2021-09-20 15:00:30 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'first_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 25, in storeDetails
+    user = validate.userData( first_name = request.POST['first_name'],mid_name = request.POST['mid_name'],
+  File "C:\python 3.9\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'first_name'
+2021-09-20 15:01:14 INFO-validating first name of the user
+2021-09-20 15:01:14 INFO-validating last name of the user
+2021-09-20 15:01:14 INFO-validating the nation of the user
+2021-09-20 15:01:14 INFO-validating the state of the user
+2021-09-20 15:01:14 INFO-validating age with respect to the gender
+2021-09-20 15:01:14 INFO-calculating the age of the user
+2021-09-20 15:01:14 INFO-validating salary of the user
+2021-09-20 15:01:14 INFO-validating pincode of the user
+2021-09-20 15:01:14 INFO-validating pan of the user
+2021-09-20 15:01:14 INFO-validating the nation of the user
+2021-09-20 15:01:14 INFO-validating the state of the user
+2021-09-20 15:01:14 INFO-validating age with respect to the gender
+2021-09-20 15:01:14 INFO-calculating the age of the user
+2021-09-20 15:01:14 INFO-validating pincode of the user
+2021-09-20 15:01:14 INFO-validating salary of the user
+2021-09-20 15:01:14 INFO-validating pan of the user
+2021-09-20 15:02:57 INFO-validating first name of the user
+2021-09-20 15:02:57 INFO-validating last name of the user
+2021-09-20 15:02:57 INFO-validating the nation of the user
+2021-09-20 15:02:57 INFO-validating the state of the user
+2021-09-20 15:02:57 INFO-validating age with respect to the gender
+2021-09-20 15:02:57 INFO-calculating the age of the user
+2021-09-20 15:02:57 INFO-validating salary of the user
+2021-09-20 15:02:57 INFO-validating pincode of the user
+2021-09-20 15:02:57 INFO-validating pan of the user
+2021-09-20 15:02:57 INFO-validating the nation of the user
+2021-09-20 15:02:57 INFO-validating the state of the user
+2021-09-20 15:02:57 INFO-validating age with respect to the gender
+2021-09-20 15:02:57 INFO-calculating the age of the user
+2021-09-20 15:02:57 INFO-validating pincode of the user
+2021-09-20 15:02:57 INFO-validating salary of the user
+2021-09-20 15:02:57 INFO-validating pan of the user
+2021-09-20 15:03:05 ERROR-Internal Server Error: /storeDetails
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'first_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\nishakumari\projects\add\calc\views.py", line 25, in storeDetails
+    user = validate.userData( first_name = request.POST['first_name'],mid_name = request.POST['mid_name'],
+  File "C:\python 3.9\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'first_name'
+2021-09-20 15:03:21 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:05:01 INFO-validating first name of the user
+2021-09-20 15:05:01 INFO-validating last name of the user
+2021-09-20 15:05:01 INFO-validating the nation of the user
+2021-09-20 15:05:01 INFO-validating the state of the user
+2021-09-20 15:05:01 INFO-validating age with respect to the gender
+2021-09-20 15:05:01 INFO-calculating the age of the user
+2021-09-20 15:05:01 INFO-validating salary of the user
+2021-09-20 15:05:01 INFO-validating pincode of the user
+2021-09-20 15:05:01 INFO-validating pan of the user
+2021-09-20 15:05:01 INFO-validating the nation of the user
+2021-09-20 15:05:01 INFO-validating the state of the user
+2021-09-20 15:05:01 INFO-validating age with respect to the gender
+2021-09-20 15:05:01 INFO-calculating the age of the user
+2021-09-20 15:05:01 INFO-validating pincode of the user
+2021-09-20 15:05:01 INFO-validating salary of the user
+2021-09-20 15:05:01 INFO-validating pan of the user
+2021-09-20 15:15:30 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 15:15:30 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:19:44 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 15:19:44 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:20:41 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 15:20:41 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:21:35 INFO-validating first name of the user
+2021-09-20 15:21:35 INFO-validating last name of the user
+2021-09-20 15:21:35 INFO-validating the nation of the user
+2021-09-20 15:21:35 INFO-validating the state of the user
+2021-09-20 15:21:35 INFO-validating age with respect to the gender
+2021-09-20 15:21:35 INFO-calculating the age of the user
+2021-09-20 15:21:35 INFO-validating salary of the user
+2021-09-20 15:21:35 INFO-validating pincode of the user
+2021-09-20 15:21:35 INFO-validating pan of the user
+2021-09-20 15:21:35 INFO-validating the nation of the user
+2021-09-20 15:21:35 INFO-validating the state of the user
+2021-09-20 15:21:35 INFO-validating age with respect to the gender
+2021-09-20 15:21:35 INFO-calculating the age of the user
+2021-09-20 15:21:35 INFO-validating pincode of the user
+2021-09-20 15:21:35 INFO-validating salary of the user
+2021-09-20 15:21:35 INFO-validating pan of the user
+2021-09-20 15:27:42 INFO-validating first name of the user
+2021-09-20 15:27:42 INFO-validating last name of the user
+2021-09-20 15:27:42 INFO-validating the nation of the user
+2021-09-20 15:27:42 INFO-validating the state of the user
+2021-09-20 15:27:42 INFO-validating age with respect to the gender
+2021-09-20 15:27:42 INFO-calculating the age of the user
+2021-09-20 15:27:42 INFO-validating salary of the user
+2021-09-20 15:27:42 INFO-validating pincode of the user
+2021-09-20 15:27:42 INFO-validating pan of the user
+2021-09-20 15:27:42 INFO-validating the nation of the user
+2021-09-20 15:27:42 INFO-validating the state of the user
+2021-09-20 15:27:42 INFO-validating age with respect to the gender
+2021-09-20 15:27:42 INFO-calculating the age of the user
+2021-09-20 15:27:42 INFO-validating pincode of the user
+2021-09-20 15:27:42 INFO-validating salary of the user
+2021-09-20 15:27:42 INFO-validating pan of the user
+2021-09-20 15:28:07 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:29:35 INFO-validating first name of the user
+2021-09-20 15:29:35 INFO-validating last name of the user
+2021-09-20 15:29:35 INFO-validating the nation of the user
+2021-09-20 15:29:35 INFO-validating the state of the user
+2021-09-20 15:29:35 INFO-validating age with respect to the gender
+2021-09-20 15:29:35 INFO-calculating the age of the user
+2021-09-20 15:29:35 INFO-validating salary of the user
+2021-09-20 15:29:35 INFO-validating pincode of the user
+2021-09-20 15:29:35 INFO-validating pan of the user
+2021-09-20 15:29:35 INFO-validating the nation of the user
+2021-09-20 15:29:35 INFO-validating the state of the user
+2021-09-20 15:29:35 INFO-validating age with respect to the gender
+2021-09-20 15:29:35 INFO-calculating the age of the user
+2021-09-20 15:29:35 INFO-validating pincode of the user
+2021-09-20 15:29:35 INFO-validating salary of the user
+2021-09-20 15:29:35 INFO-validating pan of the user
+2021-09-20 15:30:56 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 15:30:56 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:31:23 INFO-validating first name of the user
+2021-09-20 15:31:23 INFO-validating last name of the user
+2021-09-20 15:31:23 INFO-validating the nation of the user
+2021-09-20 15:31:23 INFO-validating the state of the user
+2021-09-20 15:31:23 INFO-validating age with respect to the gender
+2021-09-20 15:31:23 INFO-calculating the age of the user
+2021-09-20 15:31:23 INFO-validating salary of the user
+2021-09-20 15:31:23 INFO-validating pincode of the user
+2021-09-20 15:31:23 INFO-validating pan of the user
+2021-09-20 15:31:23 INFO-validating the nation of the user
+2021-09-20 15:31:23 INFO-validating the state of the user
+2021-09-20 15:31:23 INFO-validating age with respect to the gender
+2021-09-20 15:31:23 INFO-calculating the age of the user
+2021-09-20 15:31:23 INFO-validating pincode of the user
+2021-09-20 15:31:23 INFO-validating salary of the user
+2021-09-20 15:31:23 INFO-validating pan of the user
+2021-09-20 15:37:49 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 15:37:49 DEBUG-Using proactor: IocpProactor
+2021-09-20 15:38:23 INFO-validating first name of the user
+2021-09-20 15:38:23 INFO-validating last name of the user
+2021-09-20 15:38:23 INFO-validating the nation of the user
+2021-09-20 15:38:23 INFO-validating the state of the user
+2021-09-20 15:38:23 INFO-validating age with respect to the gender
+2021-09-20 15:38:23 INFO-calculating the age of the user
+2021-09-20 15:38:23 INFO-validating salary of the user
+2021-09-20 15:38:23 INFO-validating pincode of the user
+2021-09-20 15:38:23 INFO-validating pan of the user
+2021-09-20 15:38:23 INFO-validating the nation of the user
+2021-09-20 15:38:23 INFO-validating the state of the user
+2021-09-20 15:38:23 INFO-validating age with respect to the gender
+2021-09-20 15:38:23 INFO-calculating the age of the user
+2021-09-20 15:38:23 INFO-validating pincode of the user
+2021-09-20 15:38:23 INFO-validating salary of the user
+2021-09-20 15:38:23 INFO-validating pan of the user
+2021-09-20 15:50:17 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:05:24 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:06:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:06:50 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:07:47 INFO-validating first name of the user
+2021-09-20 16:07:47 INFO-validating last name of the user
+2021-09-20 16:07:47 INFO-validating the nation of the user
+2021-09-20 16:07:47 INFO-validating the state of the user
+2021-09-20 16:07:47 INFO-validating age with respect to the gender
+2021-09-20 16:07:47 INFO-calculating the age of the user
+2021-09-20 16:07:47 INFO-validating salary of the user
+2021-09-20 16:07:47 INFO-validating pincode of the user
+2021-09-20 16:07:47 INFO-validating pan of the user
+2021-09-20 16:07:47 INFO-validating the nation of the user
+2021-09-20 16:07:47 INFO-validating the state of the user
+2021-09-20 16:07:47 INFO-validating age with respect to the gender
+2021-09-20 16:07:47 INFO-calculating the age of the user
+2021-09-20 16:07:47 INFO-validating pincode of the user
+2021-09-20 16:07:47 INFO-validating salary of the user
+2021-09-20 16:07:47 INFO-validating pan of the user
+2021-09-20 16:10:45 INFO-validating first name of the user
+2021-09-20 16:10:45 INFO-validating last name of the user
+2021-09-20 16:10:45 INFO-validating the nation of the user
+2021-09-20 16:10:45 INFO-validating the state of the user
+2021-09-20 16:10:45 INFO-validating age with respect to the gender
+2021-09-20 16:10:45 INFO-calculating the age of the user
+2021-09-20 16:10:45 INFO-validating salary of the user
+2021-09-20 16:10:45 INFO-validating pincode of the user
+2021-09-20 16:10:45 INFO-validating pan of the user
+2021-09-20 16:10:45 INFO-validating the nation of the user
+2021-09-20 16:10:45 INFO-validating the state of the user
+2021-09-20 16:10:45 INFO-validating age with respect to the gender
+2021-09-20 16:10:45 INFO-calculating the age of the user
+2021-09-20 16:10:45 INFO-validating pincode of the user
+2021-09-20 16:10:45 INFO-validating salary of the user
+2021-09-20 16:10:45 INFO-validating pan of the user
+2021-09-20 16:10:59 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:11:05 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:11:10 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:25:39 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:25:39 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:26:06 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:26:06 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:29:34 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:29:34 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:31:22 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:31:22 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:31:52 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:31:52 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:32:15 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:32:21 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view calc.views.home didn't return an HttpResponse object. It returned None instead.
+2021-09-20 16:33:25 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:33:25 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:33:28 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view calc.views.home didn't return an HttpResponse object. It returned None instead.
+2021-09-20 16:33:32 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view calc.views.home didn't return an HttpResponse object. It returned None instead.
+2021-09-20 16:34:00 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:34:00 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:34:44 INFO-validating first name of the user
+2021-09-20 16:34:44 INFO-validating last name of the user
+2021-09-20 16:34:44 INFO-validating the nation of the user
+2021-09-20 16:34:44 INFO-validating the state of the user
+2021-09-20 16:34:44 INFO-validating age with respect to the gender
+2021-09-20 16:34:44 INFO-calculating the age of the user
+2021-09-20 16:34:44 INFO-validating salary of the user
+2021-09-20 16:34:44 INFO-validating pincode of the user
+2021-09-20 16:34:44 INFO-validating pan of the user
+2021-09-20 16:34:44 INFO-validating the nation of the user
+2021-09-20 16:34:44 INFO-validating the state of the user
+2021-09-20 16:34:44 INFO-validating age with respect to the gender
+2021-09-20 16:34:44 INFO-calculating the age of the user
+2021-09-20 16:34:44 INFO-validating pincode of the user
+2021-09-20 16:34:44 INFO-validating salary of the user
+2021-09-20 16:34:44 INFO-validating pan of the user
+2021-09-20 16:38:44 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:38:44 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:39:32 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:39:32 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:40:22 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:40:22 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:42:09 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:42:09 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:42:29 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:42:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:42:47 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:42:47 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:43:14 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:43:14 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:44:14 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:44:14 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:44:43 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:44:49 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:44:53 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:45:49 INFO-validating first name of the user
+2021-09-20 16:45:49 INFO-validating last name of the user
+2021-09-20 16:45:49 INFO-validating the nation of the user
+2021-09-20 16:45:49 INFO-validating the state of the user
+2021-09-20 16:45:49 INFO-validating age with respect to the gender
+2021-09-20 16:45:49 INFO-calculating the age of the user
+2021-09-20 16:45:49 INFO-validating salary of the user
+2021-09-20 16:45:49 INFO-validating pincode of the user
+2021-09-20 16:45:49 INFO-validating pan of the user
+2021-09-20 16:45:49 INFO-validating the nation of the user
+2021-09-20 16:45:49 INFO-validating the state of the user
+2021-09-20 16:45:49 INFO-validating age with respect to the gender
+2021-09-20 16:45:49 INFO-calculating the age of the user
+2021-09-20 16:45:49 INFO-validating pincode of the user
+2021-09-20 16:45:49 INFO-validating salary of the user
+2021-09-20 16:45:49 INFO-validating pan of the user
+2021-09-20 16:47:18 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:47:18 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:47:21 WARNING-Not Found: /favicon.ico
+2021-09-20 16:47:56 INFO-validating first name of the user
+2021-09-20 16:47:56 INFO-validating last name of the user
+2021-09-20 16:47:56 INFO-validating the nation of the user
+2021-09-20 16:47:56 INFO-validating the state of the user
+2021-09-20 16:47:56 INFO-validating age with respect to the gender
+2021-09-20 16:47:56 INFO-calculating the age of the user
+2021-09-20 16:47:56 INFO-validating salary of the user
+2021-09-20 16:47:56 INFO-validating pincode of the user
+2021-09-20 16:47:56 INFO-validating pan of the user
+2021-09-20 16:47:56 INFO-validating the nation of the user
+2021-09-20 16:47:56 INFO-validating the state of the user
+2021-09-20 16:47:56 INFO-validating age with respect to the gender
+2021-09-20 16:47:56 INFO-calculating the age of the user
+2021-09-20 16:47:56 INFO-validating pincode of the user
+2021-09-20 16:47:56 INFO-validating salary of the user
+2021-09-20 16:47:56 INFO-validating pan of the user
+2021-09-20 16:51:43 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:51:43 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:51:45 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view calc.views.home didn't return an HttpResponse object. It returned None instead.
+2021-09-20 16:52:02 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:52:02 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:52:04 ERROR-Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\python 3.9\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view calc.views.home didn't return an HttpResponse object. It returned None instead.
+2021-09-20 16:52:18 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:52:18 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:54:27 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 16:54:27 DEBUG-Using proactor: IocpProactor
+2021-09-20 16:58:26 INFO-validating first name of the user
+2021-09-20 16:58:26 INFO-validating last name of the user
+2021-09-20 16:58:26 INFO-validating the nation of the user
+2021-09-20 16:58:26 INFO-validating the state of the user
+2021-09-20 16:58:26 INFO-validating age with respect to the gender
+2021-09-20 16:58:26 INFO-calculating the age of the user
+2021-09-20 16:58:26 INFO-validating salary of the user
+2021-09-20 16:58:26 INFO-validating pincode of the user
+2021-09-20 16:58:26 INFO-validating pan of the user
+2021-09-20 16:58:26 INFO-validating the nation of the user
+2021-09-20 16:58:26 INFO-validating the state of the user
+2021-09-20 16:58:26 INFO-validating age with respect to the gender
+2021-09-20 16:58:26 INFO-calculating the age of the user
+2021-09-20 16:58:26 INFO-validating pincode of the user
+2021-09-20 16:58:26 INFO-validating salary of the user
+2021-09-20 16:58:26 INFO-validating pan of the user
+2021-09-20 17:02:17 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 17:02:17 DEBUG-Using proactor: IocpProactor
+2021-09-20 17:11:35 INFO-validating first name of the user
+2021-09-20 17:11:35 INFO-validating last name of the user
+2021-09-20 17:11:35 INFO-validating the nation of the user
+2021-09-20 17:11:35 INFO-validating the state of the user
+2021-09-20 17:11:35 INFO-validating age with respect to the gender
+2021-09-20 17:11:35 INFO-calculating the age of the user
+2021-09-20 17:11:35 INFO-validating salary of the user
+2021-09-20 17:11:35 INFO-validating pincode of the user
+2021-09-20 17:11:35 INFO-validating pan of the user
+2021-09-20 17:11:35 INFO-validating the nation of the user
+2021-09-20 17:11:35 INFO-validating the state of the user
+2021-09-20 17:11:35 INFO-validating age with respect to the gender
+2021-09-20 17:11:35 INFO-calculating the age of the user
+2021-09-20 17:11:35 INFO-validating pincode of the user
+2021-09-20 17:11:35 INFO-validating salary of the user
+2021-09-20 17:11:35 INFO-validating pan of the user
+2021-09-20 17:20:29 INFO-C:\Users\nishakumari\projects\add\calc\views.py changed, reloading.
+2021-09-20 17:20:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 17:20:29 DEBUG-Using proactor: IocpProactor
+2021-09-20 17:21:02 INFO-validating first name of the user
+2021-09-20 17:21:02 INFO-validating last name of the user
+2021-09-20 17:21:02 INFO-validating the nation of the user
+2021-09-20 17:21:02 INFO-validating the state of the user
+2021-09-20 17:21:02 INFO-validating age with respect to the gender
+2021-09-20 17:21:02 INFO-calculating the age of the user
+2021-09-20 17:21:02 INFO-validating salary of the user
+2021-09-20 17:21:02 INFO-validating pincode of the user
+2021-09-20 17:21:02 INFO-validating pan of the user
+2021-09-20 17:21:02 INFO-validating the nation of the user
+2021-09-20 17:21:02 INFO-validating the state of the user
+2021-09-20 17:21:02 INFO-validating age with respect to the gender
+2021-09-20 17:21:02 INFO-calculating the age of the user
+2021-09-20 17:21:02 INFO-validating pincode of the user
+2021-09-20 17:21:02 INFO-validating salary of the user
+2021-09-20 17:21:02 INFO-validating pan of the user
+2021-09-20 17:23:47 INFO-C:\Users\nishakumari\projects\add\calc\forms.py changed, reloading.
+2021-09-20 17:23:47 DEBUG-Using proactor: IocpProactor
+2021-09-20 17:24:54 INFO-C:\Users\nishakumari\projects\add\calc\forms.py changed, reloading.
+2021-09-20 17:24:54 DEBUG-Using proactor: IocpProactor
+2021-09-20 18:15:34 DEBUG-Using proactor: IocpProactor
+2021-09-20 18:29:32 DEBUG-Using proactor: IocpProactor
